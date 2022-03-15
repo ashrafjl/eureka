@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;800&display=swap');
+:root{
+    --main-color: #FF0363;
+    --second-color: #fce7ef;
+    --font-color: #540423;
+    --second: #EF5DA8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Red Hat Display', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--second-color);
+}
+.dardBtn{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    background: linear-gradient(to right, var(--main-color), var(--second));
+    color: #fff;
+    font-weight: 500;
+}
+.lightBtn{
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    color: var(--font-color);
+    background: #fff;
+    margin-left: 2rem;
+    font-weight: 500;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar{
+    height: 8rem;
+    flex-wrap: wrap;
+}
+.searchBar{
+    position: relative;
+}
+.searchBar img{
+    position: absolute;
+    left: 1rem;
+    top: 25%;
+}
+.searchBar input{
+    width: 100%;
+    height: 2.5rem;
+    padding: .5rem 4rem;
+    outline: none;
+    border: none;
+    border-radius: .8rem;
+    font-size: 1.2rem;
+}
+.searchBar img{
+    width: 1.4rem;
+}
+/* .searchBar input:focus-within .searchBar img{
+    display: none;
+} */
+.searchBar input::placeholder{
+    font-size: 1.6rem;
+}
+.navbar .navLinks ul li{
+    margin: 0 2rem;
+}
+.navbar .navLinks ul li a{
+    font-size: 1.6rem;
+    font-weight: 700;
+    position: relative;
+    color: var(--font-color);
+}
+.navbar .navLinks ul li:first-child a{
+    color: var(--main-color);
+}
+.navbar .navLinks ul li:first-child a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 3rem;
+    height: .2rem;
+    background-color: var(--main-color);
+}
+.logo-container.flex{
+    flex: 0 0 40rem
+}
+.navLinks{
+    flex: 0 0 42rem;
+}
+.cart-container{
+    flex: 0 0 18rem;
+}
+
+.cart p{
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--font-color);
+    padding-left: .5rem;
+}
+.myaccount.flex img:first-child{
+    margin-right: .8rem;
+}
+
+/* Hero section starts here  */
+.heroSection{
+    position: relative;
+    min-height: 100vh;
+}
+.heroContainer{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+}
+.herobackground{
+    position: absolute;
+    top: 0;
+    right: 3rem;
+    z-index: -1;
+}
+/* Left Banner section  */
+.leftbannerContainer{
+    flex: 0 0 30%;
+}
+.leftbannerHeading{
+    margin-top: 8rem;
+}
+.leftbannerContainer h1{
+    font-size: 6rem;
+    color: var(--main-color);
+}
+.leftbannerContainer h1 img{
+    margin-left: 1rem;
+}
+.leftbannerContainer h1 span{
+    color: var(--font-color);
+}
+.leftbannerContainer p{
+    font-size: 1.6rem;
+    padding: 2rem 0;
+    color: var(--font-color);
+}
+.topBrandsText{
+    margin-top: 6rem;
+}
+.topBrandsText p{
+   color: var(--font-color);
+   font-size: 1.6rem;
+   font-weight: 700;
+}
+.topBrandsContainer div{
+    flex: 1;
+    margin: 0 1rem;
+}
+.topBrandsContainer img{
+    width: 100%;
+}
+/* Right Banner  */
+.rightbanerContainer{
+    flex: 0 0 70%;
+    position: relative;  
+}
+.heroImg{
+    text-align: right;
+}
+.heroImg img{
+    position: relative;
+    z-index: 1;
+}
+.rightbanerContainer .heroImages{
+    margin-right: -4rem;
+}
+.profileContainer{
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    z-index: 100;
+}
+.userContainer.flex{
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+}
+.profileHead div:last-child{
+    margin-left: 1rem;
+}
+.profileHead h4{
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+.profileHead p{
+    font-size: 1.2rem;
+    color: var(--font-color);
+    font-weight: 700;
+}
+.profileArrow div{
+    width: 4rem;
+    height: 4rem;
+    background: linear-gradient(to right, var(--main-color),var(--second));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* margin-left: 5rem; */
+}
+.profileArrow div img{
+    width: .8rem;
+}
+.shadow{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    -webkit-filter: blur(50px); /* Safari 6.0 - 9.0 */
+    filter: blur(50px);
+}
+.feedbackContainer{
+    background-color: #fff;
+    position: absolute;
+    left: 13%;
+    bottom: 30%;
+    z-index: 1;
+    padding: .8rem 1rem;
+    border-radius: .8rem;
+}
+.feedbackheader{
+    padding: .6rem 0;
+    justify-content: flex-start;
+}
+.feedbackheader h4{
+    font-size: 1.6rem;
+    color: var(--font-color);
+    margin-right: .4rem;
+}
+.feedbackheader h4 span{
+    color: var(--main-color);
+}
+.feedbackfooter{
+    justify-content: flex-start;
+}
+.feedbackimg{
+    margin: 1rem 0;
+}
+.feedbackimg img:nth-child(2){
+    margin-left: -.7rem;
+}
+.feedbackimg img:nth-child(3){
+    margin-left: -.7rem;
+}
+.feedbackimg img:nth-child(4){
+    margin-left: -.7rem;
+}
+.feedbackfooter p{
+    font-size: 1.2rem;
+    color: var(--font-color);
+    font-weight: 900;
+    margin-left: .8rem;
+}
+.social{
+    position: absolute;
+    top: 9%;
+    right: 0;
+}
+.social ul li{
+    margin: 2rem 0;
+    cursor: pointer;
+}
+.poweredBy{
+    width: 30%;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.poweredBy p{
+    font-size: 1.6rem;
+    margin: 0 .6rem;
+    color: var(--font-color);
+    font-weight: 500;
+}
