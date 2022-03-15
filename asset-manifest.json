@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/eureka/static/css/main.b197ae09.css",
+    "main.js": "/eureka/static/js/main.036d21fc.js",
+    "static/js/787.961e05a7.chunk.js": "/eureka/static/js/787.961e05a7.chunk.js",
+    "static/media/heroImg.png": "/eureka/static/media/heroImg.8a462ee394238b40efa5.png",
+    "static/media/heroBg.png": "/eureka/static/media/heroBg.2108ae4ce9df8f3426e9.png",
+    "static/media/logo.svg": "/eureka/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/fueler.svg": "/eureka/static/media/fueler.71980f6cf60fd6944354e9ed1c4ec406.svg",
+    "index.html": "/eureka/index.html",
+    "main.b197ae09.css.map": "/eureka/static/css/main.b197ae09.css.map",
+    "main.036d21fc.js.map": "/eureka/static/js/main.036d21fc.js.map",
+    "787.961e05a7.chunk.js.map": "/eureka/static/js/787.961e05a7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b197ae09.css",
+    "static/js/main.036d21fc.js"
+  ]
+}
